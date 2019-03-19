@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<!-- <meta name="viewport" content="width=width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0"> -->
+	<link rel="icon" type="image/x-icon" href="https://www.honpresent.com/Favicon.ico" media="screen">
 	<meta name="viewport" content="width=device-width, viewport-fit=cover,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="./css/reset.css">
@@ -11,14 +11,13 @@
 	<link rel="stylesheet" href="./css/swiper.min.css">
 	
 	<!-- <script src="./js/index.js"></script> -->
-	<title>Document</title>
+	<title>红岭臻选</title>
 	
 </head>
 <body>
-	<div class="w768">
+	<div class="index w768">
 		<!-- 头部 -->
 		<header>
-
 			<div class="headerTitle">
 				<p><i class="iconfont icon-liebiaolist29"></i>红岭臻选</p>
 			</div>
@@ -32,19 +31,122 @@
 					<i class="iconfont icon-soushuo"></i>
 				</div>			
 			</div>
-
-
-			<!-- 轮播图 -->
-			<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">Slide 1</div>
-						<div class="swiper-slide">Slide 2</div>
-						<div class="swiper-slide">Slide 3</div>
-					</div>
-					<!-- 如果需要分页器 -->
-					<div class="swiper-pagination"></div>
-				</div>
 		</header>
+
+
+		<!-- 轮播图 -->
+		<div class="swiper-container banner-container">
+			<div class="swiper-wrapper banner-wrapper">
+				<div class="swiper-slide banner-slide"><a href="#"><img src="./images/banner.png" alt=""></a></div>
+				<div class="swiper-slide banner-slide"><a href="#"><img src="./images/banner.png" alt=""></a></div>
+				<div class="swiper-slide banner-slide"><a href="#"><img src="./images/banner.png" alt=""></a></div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+		</div>
+
+
+		<!-- nav  快捷入口-->
+		<div class="index-nav clear">
+			<a href="/headline/load"><i class="iconfont icon-rice"></i><h4>食肆</h4></a>
+			<a href="/group/groupSort"><i class="iconfont icon-maojin"></i><h4>居家</h4></a>
+			<a href="/wap/seckill/list"><i class="iconfont icon-dianshuihu"></i><h4>电器</h4></a>
+			<a href="/wap/integral/index"><i class="iconfont icon-liebiao"></i><h4>分类</h4></a>
+		</div>
+
+
+		<!-- 头条 -->
+		<div class="swiper-container headlines-container">
+			<div class="swiper-wrapper headlines-wrapper">
+				<div class="swiper-slide"><a href="#">
+					<div class="headlinesTitle"><p>臻</p>头条</div>
+					<div class="headlinesSection">节气</div>
+					<p class="headlinesText">小雪|雨露凝结成霜雪，万物归建于沉积</p>
+					<span class="headlinesMore">更多></span>
+				</a></div>
+				<div class="swiper-slide"><a href="#">
+					<div class="headlinesTitle"><p>臻</p>头条</div>
+					<div class="headlinesSection">节气</div>
+					<p class="headlinesText">小雪|雨露凝结成霜雪，万物归建于沉积</p>
+					<span class="headlinesMore">更多></span>
+				</a></div>
+				<div class="swiper-slide"><a href="#">
+					<div class="headlinesTitle"><p>臻</p>头条</div>
+					<div class="headlinesSection">节气</div>
+					<p class="headlinesText">小雪|雨露凝结成霜雪，万物归建于沉积</p>
+					<span class="headlinesMore">更多></span>
+				</a></div>
+			</div>
+		</div>
+
+		<!-- 臻选秒杀 -->
+		<div class="hySpkice">
+			<div class="hySpkiceHead publicContent">
+				<img class="publicImg" src="./images/xg.png" alt="">
+				<div class="publicTitle">臻选秒杀</div>
+				<ul class="hySpkiceTime">
+					<li><span class="hySpkiceTimeNum">00</span></li>
+					<li>:</li>
+					<li><span class="hySpkiceTimeNum">10</span></li>
+					<li>:</li>
+					<li><span class="hySpkiceTimeNum">08</span></li>
+				</ul>
+				<img class="publicImg" src="./images/xg.png" alt="">
+			</div>
+			<div class="hySpkiceContent">
+				<div class="hySpkiceLi">
+					<a href="#">
+						<img src="./images/product/product1_a.jpg" alt="">
+						<p class="hySpkiceLiP">生活元素 智能预约陶瓷双层电饭盒2L</p>
+						<div class="hySpkiceLiPrice">
+								<span>￥155</span>
+								<s>￥175</s>
+						</div>
+						<div class="hySpkiceLiNum">仅售8件</div>
+					</a>
+
+				</div>
+				<div class="hySpkiceLi">
+						<a href="#">
+							<img src="./images/product/product2_a.jpg" alt="">
+							<p class="hySpkiceLiP">生活元素 智能预约陶瓷双层电饭盒2L</p>
+							<div class="hySpkiceLiPrice">
+								<span>￥155</span>
+								<s>￥175</s>
+							</div>
+							<div class="hySpkiceLiNum">仅售8件</div>
+						</a>
+	
+					</div>
+
+			</div>
+			<div class="hySpkiceMore"><a href="#">更多秒杀></a></div>
+
+		</div>
+
+
+		<!-- 领券中心 -->
+		<div class="quan">
+				<div class="publicContent">
+					<img class="publicImg" src="./images/xg.png" alt="">
+					<div class="publicTitle">领券中心</div>
+					<img class="publicImg" src="./images/xg.png" alt="">
+				</div>
+				<div>
+
+				</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
 	</div>
 </body>
 

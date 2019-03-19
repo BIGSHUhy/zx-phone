@@ -6,7 +6,7 @@ header {
   position: fixed;
   padding: 0 0.5rem;
   z-index: 999;
-  
+  background: #FCB714;
 }
 .headerTitle {
 	width: 100%;
@@ -31,7 +31,9 @@ header .header-box {
   background: rgba(0,0,0,0);
   position: relative;
   /* padding: 0 .133333rem; */
-	box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 8rem;
+
 	/* padding-left: 0.4rem; */
 }
 header .header-scan {
@@ -66,11 +68,7 @@ header .header-search i {
   left: 0.5rem;
   top: 0.1rem;
   display: block;
-  font-size: 1.3rem
-  /* width: 16px;
-  height: 16px; */
-  /* background: url(../images/search.png) no-repeat; */
-  /* background-size: 16px 16px; */
+  font-size: 1.3rem;
 }
 header .header-mes {
   position: absolute;
@@ -84,10 +82,32 @@ header .header-mes img {
 }
 
 /* 轮播图 */
-.swiper-container {
-    /* width: 600px; */
-    height: 300px;
+.index .banner-container {
+    position: relative;
+    z-index: 1000;
+    top: 4rem;
+    height: 10rem;
 }  
+.index .banner-slide {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.index .banner-slide img {
+  /* border-radius: 0.5rem; */
+  padding: 0 0.5rem;
+}
+.index .swiper-pagination-bullet {
+  border: 1px solid #fff;
+  width: 0.4rem;
+  height: 0.4rem;
+  
+}
+.index .swiper-pagination-bullet-active {
+  background: #FDCB28;
+}
+
+
+
 /*end 头部*/
 
 .index a img {
@@ -136,7 +156,7 @@ header .header-mes img {
 /*快捷入口*/
 .index .index-nav {
   background: #fff;
-  padding: 3px;
+  padding-top: 4.5rem;
 }
 .index .index-nav a {
   display: block;
@@ -145,15 +165,174 @@ header .header-mes img {
   padding: 3px;
   text-align: center;
 }
-.index .index-nav a img {
-  width: 70%;
-  margin: auto;
+.index .index-nav a .iconfont{
+  padding: 0.5rem;
+  background: #F8EDD1;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 50%;
 }
 .index .index-nav a h4 {
-  font-size: 14px;
+  font-size: 0.65rem;
   font-weight: normal;
+  padding: 0.6rem 0;
 }
 /*end 快捷入口*/
+
+
+
+/* 头条 */
+.index .headlines-container {
+    /* width: 600px; */
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 0.5rem;
+} 
+.headlinesTitle {
+  float: left;
+  font-size: 1rem;
+  color: #51504E;
+}
+.headlinesTitle p {
+  color: #F8C23E;
+  float: left;
+}
+.headlinesSection {
+  /* padding: 0.25rem 0.5rem; */
+  width: 2rem;
+  height: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  margin: 0.8rem 0.4rem 0;
+  border-radius: 0.25rem;
+  color: #F9CF6E;
+  border: 1px solid #F9CF6E;
+  float: left;
+}
+.headlinesText {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.5rem;
+}
+.headlinesMore {
+  float: right;
+}
+
+.headlines-wrapper .swiper-slide{
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+
+/* 公用斜杠图片样式 */
+
+.publicContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.publicImg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0.2rem;
+}
+.publicTitle {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+
+
+/* 臻选秒杀 */
+.hySpkice {
+  width: 100%;
+}
+.hySpkiceHead {
+  
+}
+.hySpkiceTime li {
+  float: left;
+  margin: 0 0.05rem;
+  color: #fff;
+}
+.hySpkiceTimeNum {
+  padding: 0.4rem;
+  background: #3E3A37;
+  font-size: 0.6rem;
+}
+.hySpkiceTime li:nth-child(2n) {
+  color: #000;
+}
+.hySpkiceHTitle {
+  
+}
+
+.hySpkiceContent {
+  width: 100%;
+}
+.hySpkiceLi {
+  width: 49.5%;
+  float: left;
+  position: relative;
+}
+.hySpkiceLi:nth-child(2n) {
+  float: right;
+}
+.hySpkiceLiP {
+  text-align: center;
+    font-weight: 700;
+    font-size: 0.5rem;
+    padding: 0 0.5rem;
+}
+.hySpkiceLiPrice {
+  margin: 0.4rem auto;
+  width: 4.5rem;
+  border: 1px solid #F9C03B;
+  border-radius: 0.5rem;
+  /* margin: 1rem 0; */
+    /* height: 1rem; */
+    /* padding: 0.5rem 1rem; */
+    font-size: 0.6rem;
+    /* line-height: 1rem; */
+    overflow: hidden;
+    font-size: 0.4rem;
+    font-weight: 700;
+}
+.hySpkiceLiPrice span {
+  padding: 0.1rem 0.2rem;
+  display: inline-block;
+  width: 50%;
+  background: #F9C03B;
+  color:#fff;
+  text-align: center;
+}
+.hySpkiceLiPrice s {
+  width: 50%;
+  padding: 0.1rem 0.2rem;
+  text-align: center;
+  text-decoration: line-through;
+}
+.hySpkiceLiNum {
+  padding: 0.2rem 0.1rem;
+  border: 1px solid #F9C03B;
+  color: #F9C03B;
+  border-radius: 0.25rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+.hySpkiceMore {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 0.6rem;
+}
+
+
+
 
 /*楼层01*/
 .index .floor01 {
