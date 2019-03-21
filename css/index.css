@@ -219,20 +219,24 @@ header .header-mes img {
 }
 .headlinesMore {
   float: right;
+
 }
 
 .headlines-wrapper .swiper-slide{
   border-radius: 0.5rem;
   background: #fff;
+  padding: 0 0.5rem;
 }
 
 
 /* 公用斜杠图片样式 */
 
 .publicContent {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 .publicImg {
   width: 1.5rem;
@@ -242,6 +246,20 @@ header .header-mes img {
 .publicTitle {
   font-size: 1rem;
   font-weight: 700;
+}
+/* 公共查看更多 */
+.seeMore {
+  position: absolute;
+  /* float: right; */
+  font-size: 0.6rem;
+  right: 0.5rem;
+  
+  background: #B18000;
+  border-radius: 0.2rem;
+  padding: 0.2rem 0.4rem;
+}
+.seeMore a {
+  color: #fff;
 }
 
 
@@ -259,7 +277,7 @@ header .header-mes img {
   color: #fff;
 }
 .hySpkiceTimeNum {
-  padding: 0.4rem;
+  padding: 0.1rem;
   background: #3E3A37;
   font-size: 0.6rem;
 }
@@ -329,6 +347,377 @@ header .header-mes img {
   display: flex;
   justify-content: center;
   font-size: 0.6rem;
+}
+
+
+/* 领券中心 */
+.quan {
+  position: relative;
+}
+.quanContent {
+  width: 100%;
+  padding: 0 0.2rem;
+  overflow: hidden;
+}
+.quanContentL {
+  
+  width: 49.5%;
+  height: 9rem;
+  float: left;
+  padding-top: 1rem;
+  background: url(../images/quan/quan2.png);
+}
+
+.quanContentLH3 {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+.quanContentLP {
+  font-size: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0 0.25rem 0;
+}
+.quanContentLBottom {
+  margin: 0 auto;
+  width: 7rem;
+  height: 5rem;
+  position: relative;
+}
+.quanContentLBottom img {
+  position: absolute;
+}
+.quanContentLCard {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.quanContentLCardL {
+  width: 70%;
+  float: left;
+  margin-top: 0.6rem;
+  
+}
+.quanContentLCardNum {
+  font-size: 1.2rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quanContentLCardNum span {
+  font-size: 1.8rem;
+}
+.quanContentLCardL p {
+  font-size: 0.6rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quanContentLCardR {
+  position: absolute;
+  border-radius: 50%;
+  right: 0.4rem;
+  top: 0.9rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  text-align: center;
+  /* line-height: 1.5rem; */
+  padding: 0.4rem;
+  background: #fff;
+  color: #D02941;
+  font-size: 0.5rem;
+  float: left;
+}
+
+.quanContentR {
+  width: 49.5%;
+  float: right;
+}
+.quanContentR ul {
+  width: 100%;
+	height: 9rem;
+
+	overflow-y: auto;
+}
+.quanContentR li {
+	height: 5rem;
+	color: #595757;
+	margin-bottom: 0.25rem;
+	background-image:url(../images/quan/coupon_bg1.png);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+  width: 100%;
+}
+.quanContentR li:nth-child(2n) {
+  background: url(../images/quan/coupon_bg2.png)
+}
+.quanContentRChart {
+	width: 30%;
+	float: left;
+
+}
+.quanContentRChart .quanContentRChartIcon {
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  height: 2rem;
+  align-items: center;
+  background: #fff;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 50%;
+  margin: 1.3rem 0.5rem;
+}
+.quanContentRContent {
+	width: 45%;
+	float: left;
+  /* height: 94px; */
+  
+}
+.quanContentR .quanContentRContent h3 {
+	font-size: 0.7rem;
+	font-weight: 700;
+	padding-top: 0.8rem;
+	color: #595757;
+}
+.quanContentR .quanContentRContent h2 {
+	float: none;
+	font-size: 1.5rem;
+	color: #BB1C22;
+	margin: 0.5rem 0;
+}
+.quanContentRContent p {
+	float:none;
+	color: #727171;
+	font-size: 0.6rem;
+	margin: 0;
+}
+
+.quanContentRText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quanContentRText span{
+	float: left;
+	width: 1.5rem;
+	color: #727171;
+	font-size: 0.6rem;
+	line-height: 0.75rem;
+	height: 1rem;
+	font-size: 0.7rem;
+	margin-top: 1.75rem;
+	/* margin-left: 0.2rem; */
+}
+.quanContentRText p {
+   margin-top: 2rem;
+  float: left;
+  font-size: 0.7rem;
+  margin-right: 0.2rem;
+  
+}
+
+
+/* 限时团购 */
+.hyGroup {
+  width: 100%;
+  overflow: hidden;
+}
+.hyGroup .hyGroupCLi {
+	width: 100%;
+	height: 7.5rem;
+  float: left;
+  background: #fff;
+  margin-bottom: 0.2rem;
+}
+.hyGroupCLiContentTime {
+	margin: 5px 0;
+}
+.hyGroupCLiContentTime .iconfont {
+  font-weight: 700;
+}
+.hyGroupImgFrame {
+  width: 35%;
+  float: left;
+}
+.hyGroup .hyGroupCLi img {
+	width: 100%;
+	/* height: 100%; */
+	margin-left: 1rem;
+	float: left;
+}
+.hyGroupCLiContent {
+  width: 60%;
+	float: left;
+	height: 100%;
+	margin-left: 0.9rem;
+	/* padding-top: 0.5rem; */
+}
+.hyGroupCLiContentP {
+	width: 100%;
+	overflow: hidden;
+	font-size: 0.7rem;
+	color: #595757;
+	margin-top: 0.75rem;
+	margin: 0.5rem 0;
+}
+
+/* 进度条 */
+.hyGroup .progressBar {
+	width: 8rem;
+	height: 0.35rem;
+	background-color: #FFF2D9;
+	margin: 0.35rem 0;
+	border-radius: 0.5rem;
+}
+.hyGroup .progress-bar {
+	background-color: #FEDE95;
+	transition: none;
+	border-radius: 0.5rem;
+  box-shadow: none;
+  width: 60%;
+}
+
+.hyGroupCLiContent .hyGroupCLiContentTitle {
+	font-size: 0.6rem;
+	color: #626262;
+	padding: 0.65rem 0;
+}
+.hyGroupCLiContent h2 {
+	font-size: 1rem;
+	color: #B81C22;
+	margin: 0;
+	font-weight: 700;
+}
+.hyGroupCLiContent h2 s {
+	font-size: 0.6rem;
+	font-weight: 300;
+	color: #595757;
+	float: none;
+  padding: 0 0.25rem;
+  text-decoration: line-through;
+  
+}
+ .hyGroupCLiContent .hyGroupCLiContentTime {
+	 padding: 0.25rem 0;
+	 width: 100%;
+	 font-size: 0.45rem;
+ }
+ .hyGroupCLiContent .hyGroupCLiContentTime span {
+	 font-size: 0.5rem;
+	 color: #BA3B3C;
+ }
+.hyGroupCLiContentGo {
+	background: #FBC03E;
+	width: 4rem;
+	height: 1.25rem;
+	line-height: 1.25rem;
+	color: #fff;
+	font-size: 0.5rem;
+	border-radius: 0.5rem;
+	text-align: center;
+}
+
+
+
+/* 臻选推荐 */
+.hyRecommendNew {
+  width: 100%;
+  overflow: hidden;
+}
+/* 推荐1/2 */
+.hyRecommendT {
+	/* width: 33%; */
+	/* float: left;
+	position: relative;
+  margin-bottom: 0; */
+  width: 100%;
+  padding: 0 0.2rem;
+}
+.hyRecommendT li {
+	width: 49.5%;
+	height: 5.5rem;
+	position: relative;
+	float: left;
+	/* margin-right: 0.5rem; */
+}
+.hyRecommendT li:nth-child(2n) {
+	float: right;
+}
+.hyRecommendT p,h3 {
+	position: relative;
+	z-index: 2;
+
+}
+.hyRecommendTP,.hyRecommendTH3 {
+	left: 0.5rem;
+}
+.hyRecommendTP {
+  font-weight: 700;
+}
+.hyRecommendTH3 {
+  font-size: 0.6rem;
+}
+.hyRecommendT p {
+	font-size: 0.7rem;
+	color: #595757;
+	height: 1rem;
+  margin-bottom: 0;
+}
+.hyRecommendTPs {
+	margin-top: 2rem;
+}
+.hyRecommendT h3 {
+	font-size: 0.6rem;
+	color: #727171;
+}
+.hyRecommendT li img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+/* 推荐1/4 */
+.hyRecommendB {
+	/* width: 33%; */
+  /* overflow: hidden; */
+  width: 100%;
+	float: left;
+  position: relative;
+  padding: 0 0.2rem;
+}
+.hyRecommendB li {
+	width: 32.66%;
+	height: 7rem;
+	position: relative;
+	float: left;
+	margin: 1% 1% 0 0;
+}
+.hyRecommendB li:nth-child(3n) {
+	float: left;
+	margin: 1% 0 0 0;
+	/* width: 280px; */
+}
+.hyRecommendB li img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.hyRecommendB p{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0.5rem;
+	font-size: 0.5rem;
+	color: #595757;
+	font-weight: 700;
 }
 
 
