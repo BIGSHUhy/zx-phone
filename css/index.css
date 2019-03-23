@@ -926,7 +926,8 @@ header .header-mes img {
 .hyFootL .hyFootLTitle {
   /* width: 100%; */
   margin-bottom: 0.4rem;
-	font-size: 0.8rem;
+  font-size: 0.7rem;
+  font-weight: 700;
 	color: #595757;
 }
 .hyFootL .hyFootLText {
@@ -983,7 +984,7 @@ header .header-mes img {
 	color: #B38000;
 	margin-top: 0.3rem;
 }
-.hyFootCGo {
+/* .hyFootCGo {
 	width: 2.5rem;
 	height: 1rem;
 	font-size: 0.4rem;
@@ -993,7 +994,7 @@ header .header-mes img {
 	line-height: 1rem;
 	text-align: center;
   margin-top: 0.8rem;
-}
+} */
 
 .hyFootCTwo {
 	width: 4.4rem;
@@ -1079,7 +1080,7 @@ header .header-mes img {
 .hyFootBCTitle {
 	font-weight: 700;
 	margin: 0;
-	font-size: 0..6rem;
+	font-size: 0.6rem;
 	color: #595757;
 }
 .hyFootBCText {
@@ -1091,12 +1092,532 @@ header .header-mes img {
 	color: #B38000;
 	margin: 0;
 }
-.hyFootBCGo {
-	font-size: 0.4rem;
+
+
+
+
+/* 生活起居 */
+.hyLive {
+  overflow: hidden;
+}
+/*第一个 */
+.hyLiveL {
+	width: 49.5%;
+	height: 10.7rem;
+	float: left;
+  position: relative;
+  overflow: hidden;
+}
+.hyLiveL img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.hyLiveLContent {
+	position: absolute;
+	z-index: 2;
+	padding: 1rem 0 0 1rem;
+}
+.hyLiveLTitle {
+	/* margin: 0; */
+	margin-bottom: 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+	color: #595757;
+}
+.hyLiveLText {
+	margin: 0.2rem 0;
+	font-size: 0.6rem;
+	color: #727171;
+}
+.hyLiveLPrice {
+	margin-top: 0.3rem;
+	font-size: 1.2rem;
+	color: #B38000;
+}
+
+/* 第二个 */
+.hyLiveC {
+	color: #595757;
+	overflow: hidden;
+	width: 49.5%;
+  padding: 0.3rem;
+  height: 10.7rem;
+	background: #fff;
+	/* margin-left: 20px; */
+	float: right;
+
+}
+.hyLiveCOne {
+	height: 5rem;
+	width: 100%;
+  margin-bottom: 1%;
+	position: relative;
+}
+.hyLiveCOne img {
+
+	height: 5rem;
+	width: 100%;
+	position: absolute;
+}
+.hyLiveCOneContent {
+	position: absolute;
+	padding: 1.5rem 0.6rem;
+}
+.hyLiveCTitle {
+	font-weight: 700;
+	font-size: 0.6rem;
+	margin: 0;
+	color: #595757;
+}
+.hyLiveCText {
+	font-size: 0.5rem;
+  color: #595757;
+  margin: 0.2rem 0;
+}
+.hyLiveCPrice {
+	font-size: 0.6rem;
+	color: #B38000;
+	margin-top: 0.3rem;
+}
+.hyLiveCGo {
+  /* margin-top: 20px; */
+}
+.hyLiveCTwo {
+	width: 4.4rem;
+	height: 5rem;
+	/* padding: 130px 20px 20px 20px;*/
+	/* margin: 5px 6px 0 0; */
+  float: left;
+  /* margin-top: 0.15rem; */
+	position: relative;
+}
+.hyLiveCTwo:nth-child(3) {
+	float: right;
+}
+.hyLiveCTwo img {
+	position: absolute;
+	width: 4.4rem;
+	height: 5rem;
+}
+.hyLiveCTwoContent {
+	position: absolute;
+	width: 4.3rem;
+	height: 5rem;
+}
+.hyLiveCTwo p {
+	float: left;
+	color: #595757;
+  font-size: 0.4rem;
+  font-weight: 700;
+  position: absolute;
+  left: 0.2rem;
+  bottom: 0.2rem;
+}
+.hyLiveCTwo span {
+	float: right;
+	font-size: 0.6rem;
+  color: #B38000;
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0.2rem;
+}
+.hyLiveCThere {
+  float: left;
+  margin-top: 0.15rem;
+}
+
+/* 第四个 */
+.hyLiveBC {
+	width: 49.5%;
+	height: 10.7rem;
+	overflow: hidden;
+	margin-top: 0.15rem;
+	background: #fff;
+	float: right;
+  padding: 0.3rem;
+}
+.hyLiveBCOne {
+	height: 49.5%;
+	width: 100%;
+	/* padding: 0.2rem; */
+	color: #595757;
+	font-size: 0.6rem;
+	position: relative;
+}
+.hyLiveBCOne img {
+  width: 100%;
+  height: 100%;
+	position: relative;
+}
+.hyLiveBCOneContent {
+  position: absolute;
+  top: 0;
+	padding: 0.75rem;
+  z-index: 2;
+}
+.hyLiveBCTitle {
+	font-weight: 700;
+	margin: 0;
+	font-size: 0.6rem;
+	color: #595757;
+}
+.hyLiveBCText {
+	font-size: 0.5rem;
+	color: #595757;
+}
+.hyLiveBCPrice {
+	font-size: 0.6rem;
+	color: #B38000;
+	margin-top: 0.3rem;
+}
+.hyLiveBC .hyLiveBCOne:nth-child(1) {
+  margin-bottom: 1%;
+}
+
+/* 第五个 */
+.hyLiveFive {
+  float: left;
+}
+
+/* 第六个 */
+.hyLiveBRight {
+	width: 49.5%;
+	height: 10.7rem;
+	float: right;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0.15rem;
+}
+.hyLiveBRight img {
+	width: 100%;
+  height: 100%;
+  position: absolute;
+	/* margin-left: 25px; */
+}
+.hyLiveBRightGo {
+  position: absolute;
+  z-index: 2;
+  bottom: 15px;
+}
+.hyLiveBRightGo p {
+  font-weight: 700;
+  
+	font-size: 0.6rem;
+	margin: 0.45rem 0 0.3rem 0;
+	padding-left: 0.8rem;
+	color: #595757;
+}
+.hyLiveBRightGo h3 {
+	font-size: 0.8rem;
+	color: #B38000;
+	font-weight: 700;
+	float: left;
+	margin:  0 0 0 0.8rem;
 }
 
 
+/* 热评产品 */
+.hyHotProduct {
+  overflow: hidden;
+}
+/* 产品列表 */
+.hyHotProductUl {
+	width: 100%;
+	/* overflow: hidden; */
+}
+.hyHotProductUl .hyHotProductLi {
+	width: 32.66%;
+	height: 10rem;
+	float: left;
+	position: relative;
+	margin-right: 1%;
+	/* height: 320px; */
+}
+.hyHotProductUl .hyHotProductLi:nth-child(3) {
+	margin: 0;
+}
+.hyHotProductLi .hyHotProductLiImg {
+	width: 100%;
+	/* height: 280px; */
+	position: relative;
+}
+.hyHotProductLiCon {
+	width: 100%;
+	background: #fff;
+	position: relative;
+	padding: 0 0.6rem 0.6rem 0.6rem;
+	font-size: 0.4rem;
 
+}
+.hyHotProductLiPeople {
+	/* margin-left: 3rem; */
+	/* height: 2.2rem; */
+  line-height: 1rem;
+  padding-top: 0.5rem;
+	font-size: 0.4rem;
+	color: #595757;
+}
+.hyHotProductLiCon img {
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	top: -1.2rem;
+	z-index: 2;
+}
+.hyHotProductLiText {
+	width: 100%;
+	font-size: 0.4rem;
+	/* padding-top: 0.4rem; */
+	height: 2rem;
+	overflow: hidden;
+	color: #727171;
+}
+
+
+/* 臻选特色 */
+
+.hyCharacteristic {
+	width: 100%;
+	overflow: hidden;
+	background: #F8F8F8;
+	/* padding-bottom: 40px; */
+}
+.hyCharacteristicTitle {
+	font-size: 0.8rem;
+	margin: 0;
+}
+.hyCharacteristicText {
+  font-size: 0.4rem;
+  padding: 0.2rem 0;
+  color: #595757;
+}
+.hyCharacteristicOne {
+  width: 32.66%;
+  height: 6rem;
+  float: left;
+  margin-right: 1%;
+  
+  position: relative;
+}
+.hyCharacteristicContent {
+  position: relative;
+  z-index: 2;
+  padding: 0.5rem 0 0 0.5rem;
+}
+.hyCharacteristicTwo {
+	margin: 0;
+  width: 32.66%;
+  height: 6px;
+	padding: 0;
+  float: right;
+  position: relative;
+	/* height: 350px; */
+}
+.hyCharacteristicOne img {
+	width: 100%;
+	position: absolute;
+}
+.hyCharacteristicTwo img {
+  width: 100%;
+	position: absolute;
+}
+.hyCharacteristicTwoListContent {
+  /* padding: 30px; */
+  width: 100%;
+  /* height: 49.5%; */
+  position: absolute;
+  z-index: 2;
+  top: 0;
+}
+.hyCharacteristicTwoList {
+  width: 100%;
+  height: 2.9rem;
+  position: relative;
+}
+
+
+/* 臻选好文 */
+.hyZxText {
+	width: 100%;
+	overflow: hidden;
+}
+.hyZxTextLi {
+	width: 49.5%;
+	background: #fff;
+	height: 9rem;
+	float: left;
+  position: relative;
+  margin-bottom: 0.2rem;
+}
+.hyZxTextLi:nth-child(2n) {
+	float: right;
+}
+.hyZxTextLi  img {
+	width: 100%;
+}
+.hyZxTextLi  h3 {
+	width: 100%;
+	padding: 0.4rem 0.1rem;
+	text-align: left;
+	font-size: 0.6rem;
+	font-weight: 700;
+	color: #595757;
+}
+.hyZxTextLi  p {
+	width: 100%;
+	text-align: left;
+	padding: 0 0.1rem;
+	overflow: hidden;
+	height: 1.2rem;
+	color: #727171;
+	font-size: 0.4rem;
+}
+
+/* 视频直播 */
+.hyVideo {
+	width: 100%;
+  overflow: hidden;
+}
+.hyVideoLi {
+	width: 49.5%;
+	float: left;
+	height: 5rem;
+	position: relative;
+	margin: 0 0 0.5rem 0;
+	color: #fff;
+}
+.hyVideoLi img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.hyVideoLi:nth-child(2n) {
+	float: right;
+}
+.hyVideoLi .hyVideoLiBtn .iconfont {
+	font-size: 1rem;
+  /* margin-left: 0.3rem; */
+  position: relative;
+  top: -0.45rem;
+  left: 0.15rem;
+  color: #fff;
+}
+.hyVideoLiBtn {
+	width: 1.2rem;
+	height: 1.2rem;
+	border: 2px solid #ccc;
+	position: absolute;
+	line-height: 2rem;
+	left: 0;
+	top: -2rem;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border-radius: 50%;
+	z-index: 3;
+}
+.hyVideoLiText {
+	width: 100%;
+	height: 2rem;
+	background-color:rgba(0,0,0,0.7);
+	position: absolute;
+	bottom: 0;
+	padding: 0 0.5rem;
+}
+.hyVideoLiText h3 {
+	font-size: 0.6rem;
+	font-weight: 700;
+  margin-top: 0.2rem;
+  color: #fff;
+}
+.hyVideoLiText p {
+  font-size: 0.4rem;
+  color: #fff;
+}
+
+
+/* 懂你想要 */
+.hyUnderstand {
+  width: 100%;
+  overflow: hidden;
+}
+.hyUnderstandBanner {
+  width: 100%;
+  height: 2rem;
+}
+.hyUnderstandBanner img {
+  width: 100%;
+  height: 100%;
+}
+.hyUnderstandUl {
+	width: 100%;
+}
+.hyUnderstandLi {
+	width: 49.5%;
+	background: #fff;
+	height: 11rem;
+	float: left;
+  padding: 0.5rem;
+  margin-bottom: 0.2rem;
+	position: relative;
+}
+.hyUnderstandLi:nth-child(2n) {
+	float: right;
+}
+.hyUnderstandLi img {
+	width: 100%;
+}
+.hyUnderstandLi h3 {
+	font-weight: 700;
+	font-size: 0.5rem;
+	color: #595757;
+}
+.hyUnderstandLiPrice p{
+	color: #B38000;
+	font-size: 0.7rem;
+	font-weight: 700;
+  float: left;
+  padding: 0.2rem 0;
+}
+.hyUnderstandLiPrice s {
+	font-size: 0.6rem;
+	color: #727171;
+	float: left;
+  padding: 0.25rem 0.5rem;
+  text-decoration: line-through;
+}
+.hyUnderstandLiPrice span {
+	float: right;
+  width: 2.5rem;
+	height: 1rem;
+	font-size: 0.4rem;
+	line-height: 1rem;
+	border-radius: 0.25rem;
+	color: #fff;
+	background: #B38000;
+	text-align: center;
+}
+
+/* 底部 */
+.hy-info-text {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  color: #b0b0b0;
+  font-size: 0.5rem;
+  padding: 1rem 0;
+}
+.hy-sites {
+  font-size: 0.5rem;
+  line-height: 0.6rem;
+  text-align: center;
+  color: #ccc;
+}
+.hy-info-text p a {
+  color: #ccc;
+}
 
 
 /*楼层01*/
