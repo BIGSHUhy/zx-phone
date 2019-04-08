@@ -1,17 +1,6 @@
 // 监听滚动条
-$(document).scroll(function() {
-	// console.log($(this).scrollTop())
-	// if($(this).scrollTop() > 69) {
-	// 	$(".header-box").css({"margin-bottom":"0"})
-	// 	$(".banner-container").css({"z-index":"998"})
-	// } else {
-	// 	$(".header-box").css({"margin-bottom":"8rem"})
-	// 	$(".banner-container").css({"z-index":"1000"})
-	// }
-});
-$('body').bind('touchmove', function(e) { 
-	e.preventdefault();               //禁用默认滚动行为，需要自己实现滚动
-	// console.log($(this).scrollTop()); // 计算你的屏幕高度
+$(window).scroll(function() {
+	console.log($(this).scrollTop())
 	if($(this).scrollTop() > 69) {
 		$(".header-box").css({"margin-bottom":"0"})
 		$(".banner-container").css({"z-index":"998"})
@@ -20,6 +9,17 @@ $('body').bind('touchmove', function(e) {
 		$(".banner-container").css({"z-index":"1000"})
 	}
 });
+// $('body').bind('touchmove', function(e) { 
+// 	e.preventdefault();               //禁用默认滚动行为，需要自己实现滚动
+// 	// console.log($(this).scrollTop()); // 计算你的屏幕高度
+// 	if($(this).scrollTop() > 69) {
+// 		$(".header-box").css({"margin-bottom":"0"})
+// 		$(".banner-container").css({"z-index":"998"})
+// 	} else {
+// 		$(".header-box").css({"margin-bottom":"8rem"})
+// 		$(".banner-container").css({"z-index":"1000"})
+// 	}
+// });
 // window.addEventListener('scroll', function () {
 // 	// console.log($(this).scrollTop())
 // 	if($(this).scrollTop() > 69) {
@@ -47,7 +47,7 @@ var mySwiper = new Swiper('.banner-container',{
 	autoplay: {
 		delay: 3000,
 		stopOnLastSlide: false,
-		disableOnInteraction: true,
+		disableOnInteraction: false,
 		},
 		
 	})
@@ -58,9 +58,9 @@ var mySwiper = new Swiper('.banner-container',{
 		direction: 'vertical',
 		loop : true,
 		autoplay: {
-			delay: 1000,
+			delay: 2000,
 			stopOnLastSlide: false,
-			disableOnInteraction: true,
+			disableOnInteraction: false,
 			},
 	  });
 	

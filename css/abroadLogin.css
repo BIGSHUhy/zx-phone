@@ -1,0 +1,101 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.hyLoginHeader {
+	width: 100%;
+	padding: 20px 0;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background: #f5f5f5;
+    border-bottom: 2px solid #dcdcdc;
+}
+.hyConten {
+	width: 1190px;
+	margin: 0 auto;
+}
+.hyLoginHeaderL {
+	float: left;
+}
+.hyLoginHeaderL img {
+	width: 168px;
+	height: 40px;
+}
+.hyLoginHeaderL span {
+	font-weight: bold;
+    font-size: 16px;
+    color: #6b6b6b;
+    border-left: solid 1px #dcdcdc;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 12px;
+	margin: 5px 0 0 12px;
+	top: -15px;
+	position: relative;
+	padding: 5px 0;
+}
+.hyConten p {
+	float: right;
+	color: #666;
+}
+
+
+.hyLogin {
+	width: 100%;
+	height: 500px;
+	background: #EFEFEF;
+	overflow: hidden;
+}
+.hyLogin form {
+	margin: 50px auto;
+	width: 400px;
+	/* height: 200px; */
+	background: #fff;
+}
+.hyLogin h3 {
+	font-size: 18px;
+	text-align: center;
+	padding: 20px 0;
+	border-bottom: 1px solid #ccc;
+}
+.hyLogin p {
+	text-align: center;
+	color: #BB1C22;
+	font-size: 14px;
+	padding: 20px 0;
+}
+.hyLoginPsw {
+	width: 310px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	margin: 0 auto;
+}
+.hyLoginPsw span {
+	float: left;
+	font-weight: 700;
+	margin-left: 10px;
+	font-size: 14px;
+}
+.hyLoginPsw input {
+	border: none;
+	float: left;
+	outline: none;
+    padding-left: 10px;
+    width: 230px;
+    height: 40px;
+}
+.hyLoginOn {
+	width: 312px;
+	height: 40px;
+	color: #fff;
+	background: #FFCC2A;
+	border: none;
+	border-radius: 5px;
+	margin: 20px 0 40px 45px;
+}
