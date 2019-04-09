@@ -9,21 +9,19 @@ header {
   background: #FCB714;
 }
 .headerTitle {
-	width: 100%;
-	/* padding: 0 0.5rem; */
-	box-sizing: border-box;
-	/* margin: 0 auto; */
+  float: left;
+  margin: 0.2rem 0.3rem 0 0;
 }
-.headerTitle p {
+/* .headerTitle p {
 	font-size: 1rem;
 	font-weight: 700;
 	text-align: center;
 	height: 1.5rem;
 	line-height: 1.5rem;
-}
-.headerTitle .iconfont {
-	float: left;
-	font-size: 1rem;
+} */
+.headerTitle img {
+	/* float: left; */
+	width: 4rem;
 }
 header .header-box {
   padding: 0.3rem 0;
@@ -48,20 +46,28 @@ header .header-scan img {
 }
 header .header-search {
   position: relative;
-  width: 100%;
+  width: 67%;
+  float: left;
   height: 30px;
+  top: 0.2rem;
 }
 header .header-search input {
   width: 100%;
   height: 1.5rem;
   border-radius: 50px;
   border: 0;
+  font-size: 0.6rem;
   padding: 0 0.75rem 0 2rem;
   line-height: 1.5rem;
-  color: #999;
+  color: #51504E;
+}
+header .header-search input:-moz-placeholder {
+  font-size: 0.6rem;
+  color:#c9caca;
 }
 header .header-search input::-webkit-input-placeholder {
-	font-size: 0.75rem;
+  font-size: 0.6rem;
+  color:#c9caca;
  }
 header .header-search i {
   position: absolute;
@@ -69,6 +75,7 @@ header .header-search i {
   top: 0.1rem;
   display: block;
   font-size: 1.3rem;
+  color: #c9caca;
 }
 header .header-mes {
   position: absolute;
@@ -85,7 +92,7 @@ header .header-mes img {
 .index .banner-container {
     position: relative;
     z-index: 1000;
-    top: 4rem;
+    top: 2.5rem;
     height: 10rem;
 }  
 .index .banner-slide {
@@ -96,6 +103,7 @@ header .header-mes img {
 .index .banner-slide img {
   border-radius: 0.3rem;
   /* padding: 0 0.5rem; */
+  height: 100%;
 }
 .index .swiper-pagination-bullet {
   border: 1px solid #fff;
@@ -160,7 +168,9 @@ header .header-mes img {
 /*快捷入口*/
 .index .index-nav {
   background: #F9F9F9;
-  padding-top: 5rem;
+  padding-top: 3.5rem;
+  width: 92%;
+  margin: 0 auto;
 }
 .index .index-nav a {
   display: block;
@@ -254,7 +264,7 @@ header .header-mes img {
 }
 
 .headlines-wrapper .swiper-slide{
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   background: #fff;
   padding: 0 0.5rem;
 }
@@ -291,7 +301,7 @@ header .header-mes img {
   width: 2.5rem;
   height: 0.8rem;
   text-align: center;
-  line-height: 0.8rem;
+  line-height: 0.9rem;
 }
 .seeMore a {
   color: #fff;
@@ -657,9 +667,11 @@ header .header-mes img {
 	font-size: 1rem;
 	color: #B81C22;
 	margin: 0;
-	font-weight: 700;
+  font-weight: 700;
+  position: relative;
+    left: -0.2rem;
 }
-.hyGroupCLiContent h2 s {
+.hyGroupCLiContent .hygroupCLiContentPS {
 	font-size: 0.6rem;
 	font-weight: 300;
 	color: #595757;
@@ -681,7 +693,7 @@ header .header-mes img {
   background: #FBC03E;
   width: 3rem;
   height: 0.8rem;
-  line-height: 1rem;
+  line-height: 0.9rem;
   color: #fff;
   font-size: 0.4rem;
   border-radius: 0.2rem;
@@ -749,7 +761,7 @@ header .header-mes img {
 }
 .hyRecommendT li img {
 	width: 100%;
-	/* height: 100%; */
+	height: 100%;
 	position: absolute;
 }
 
@@ -889,7 +901,7 @@ header .header-mes img {
   width: 2.5rem;
 	height: 0.8rem;
 	font-size: 0.4rem;
-	line-height: 0.8rem;
+	line-height: 0.9rem;
 	border-radius: 0.2rem;
 	color: #fff;
   text-align: center;
@@ -966,7 +978,7 @@ header .header-mes img {
   margin: 0.2rem 0;
   
 }
-.hyWelfareLiB s {
+.hyWelfareLiB .hyWelfareLiBS {
 	float: none;
 	margin-left: 0.25rem;
   font-size: 0.5rem;
@@ -1015,7 +1027,7 @@ header .header-mes img {
 }
 .hyFootL .hyFootLTitle {
   /* width: 100%; */
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.1rem;
   font-size: 0.6rem;
   font-weight: 700;
 	color: #595757;
@@ -1029,7 +1041,9 @@ header .header-mes img {
   /* width: 100%; */
   margin-top: 0.3rem;
 	font-size: 0.8rem;
-	color: #B38000;
+  color: #B38000;
+  position: relative;
+    left: -0.4rem;
 }
 
 /* 第二个 */
@@ -1050,7 +1064,7 @@ header .header-mes img {
 	position: relative;
 }
 .hyFootCOne img {
-	/* height: 5rem; */
+	height: 100%;
 	width: 100%;
 	position: absolute;
 }
@@ -1068,11 +1082,14 @@ header .header-mes img {
 	font-size: 0.4rem;
   color: #595757;
   margin: 0.2rem 0;
+  
 }
 .hyFootCPrice {
-	font-size: 0.6rem;
+	font-size: 0.5rem;
 	color: #B38000;
-	margin-top: 0.3rem;
+  margin-top: 0.3rem;
+  position: relative;
+    left: -0.2rem;
 }
 /* .hyFootCGo {
 	width: 2.5rem;
@@ -1101,7 +1118,7 @@ header .header-mes img {
 .hyFootCTwo img {
 	position: absolute;
 	width: 100%;
-	/* height: 5rem; */
+	height: 100%;
 }
 .hyFootCTwoContent {
 	position: absolute;
@@ -1119,7 +1136,7 @@ header .header-mes img {
 }
 .hyFootCTwo span {
 	float: right;
-	font-size: 0.6rem;
+	font-size: 0.5rem;
   color: #B38000;
   position: absolute;
   bottom: 0;
@@ -1205,26 +1222,28 @@ header .header-mes img {
 	position: absolute;
 }
 .hyLiveLContent {
-	position: absolute;
-	z-index: 2;
-	padding: 1rem 0 0 1rem;
+  position: absolute;
+  z-index: 2;
+  padding: 1rem 0 0 0.4rem;
 }
 .hyLiveLTitle {
 	/* margin: 0; */
-	margin-bottom: 0.4rem;
-  font-size: 0.7rem;
+  margin-bottom: 0.1rem;
+  font-size: 0.6rem;
   font-weight: 700;
-	color: #595757;
+  color: #595757;
 }
 .hyLiveLText {
-	margin: 0.2rem 0;
-	font-size: 0.6rem;
-	color: #727171;
+  margin: 0.2rem 0;
+  font-size: 0.4rem;
+  color: #727171;
 }
 .hyLiveLPrice {
-	margin-top: 0.3rem;
-	font-size: 1.2rem;
-	color: #B38000;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: #B38000;
+  position: relative;
+    left: -0.4rem;
 }
 
 /* 第二个 */
@@ -1247,29 +1266,31 @@ header .header-mes img {
 }
 .hyLiveCOne img {
 
-	/* height: 5rem; */
+	height: 100%;
 	width: 100%;
 	position: absolute;
 }
 .hyLiveCOneContent {
-	position: absolute;
-	padding: 1.5rem 0.6rem;
+  position: absolute;
+  padding: 1rem 0.2rem;
 }
 .hyLiveCTitle {
 	font-weight: 700;
-	font-size: 0.6rem;
-	margin: 0;
-	color: #595757;
+    font-size: 0.5rem;
+    margin: 0;
+    color: #595757;
 }
 .hyLiveCText {
-	font-size: 0.5rem;
-  color: #595757;
-  margin: 0.2rem 0;
+	font-size: 0.4rem;
+    color: #595757;
+    margin: 0.2rem 0;
 }
 .hyLiveCPrice {
-	font-size: 0.6rem;
-	color: #B38000;
-	margin-top: 0.3rem;
+	font-size: 0.5rem;
+    color: #B38000;
+    margin-top: 0.3rem;
+    position: relative;
+    left: -0.2rem;
 }
 .hyLiveCGo {
   /* margin-top: 20px; */
@@ -1289,7 +1310,7 @@ header .header-mes img {
 .hyLiveCTwo img {
 	position: absolute;
 	width: 100%;
-	/* height: 5rem; */
+	height: 100%;
 }
 .hyLiveCTwoContent {
 	position: absolute;
@@ -1297,21 +1318,21 @@ header .header-mes img {
 	height: 4rem;
 }
 .hyLiveCTwo p {
-	float: left;
-	color: #595757;
+  float: left;
+  color: #595757;
   font-size: 0.4rem;
   font-weight: 700;
   position: absolute;
   left: 0.2rem;
-  bottom: 0.2rem;
+  bottom: 0;
 }
 .hyLiveCTwo span {
 	float: right;
-	font-size: 0.6rem;
-  color: #B38000;
-  position: absolute;
-  bottom: 0.2rem;
-  right: 0.2rem;
+    font-size: 0.5rem;
+    color: #B38000;
+    position: absolute;
+    bottom: 0;
+    right: 0.2rem;
 }
 .hyLiveCThere {
   float: left;
@@ -1338,28 +1359,31 @@ header .header-mes img {
 }
 .hyLiveBCOne img {
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
 	position: relative;
 }
 .hyLiveBCOneContent {
   position: absolute;
   top: 0;
-	padding: 0.75rem;
+	padding: 1rem 0.2rem;
   z-index: 2;
 }
 .hyLiveBCTitle {
-	font-weight: 700;
-	margin: 0;
-	font-size: 0.6rem;
-	color: #595757;
+  font-weight: 700;
+  font-size: 0.5rem;
+  margin: 0;
+  color: #595757;
 }
 .hyLiveBCText {
-	font-size: 0.5rem;
-	color: #595757;
+  font-size: 0.4rem;
+  color: #595757;
+  margin: 0.2rem 0;
 }
 .hyLiveBCPrice {
 	font-size: 0.6rem;
-	color: #B38000;
+  color: #B38000;
+  position: relative;
+    left: -0.2rem;
 	margin-top: 0.3rem;
 }
 .hyLiveBC .hyLiveBCOne:nth-child(1) {
@@ -1391,22 +1415,24 @@ header .header-mes img {
 .hyLiveBRightGo {
   position: absolute;
   z-index: 2;
-  bottom: 0.5rem;
+  bottom: 0.2rem;
 }
 .hyLiveBRightGo p {
   font-weight: 700;
   
 	font-size: 0.6rem;
-	margin: 0.45rem 0 0.3rem 0;
-	padding-left: 0.8rem;
+	margin: 0.55rem 0 0.2rem 0;
+	padding-left: 0.2rem;
 	color: #595757;
 }
 .hyLiveBRightGo h3 {
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	color: #B38000;
 	font-weight: 700;
 	float: left;
-	margin:  0 0 0 0.8rem;
+  margin:  0 0 0 0.2rem;
+  position: relative;
+    left: -0.2rem;
 }
 
 
@@ -1468,7 +1494,7 @@ header .header-mes img {
   width: 100%;
   font-size: 0.4rem;
   padding-top: 0.05rem;
-  height: 2.8rem;
+  height: 3rem;
   overflow: hidden;
   color: #727171;
   position: relative;
@@ -1494,6 +1520,7 @@ header .header-mes img {
   font-size: 0.4rem;
   padding: 0.2rem 0;
   color: #595757;
+  line-height: 0.6rem;
 }
 .hyCharacteristicOne {
   width: 32.66%;
@@ -1580,7 +1607,8 @@ header .header-mes img {
 	overflow: hidden;
 	height: 1.2rem;
 	color: #727171;
-	font-size: 0.4rem;
+  font-size: 0.4rem;
+  line-height: 0.6rem;
 }
 
 /* 视频直播 */
@@ -1601,7 +1629,7 @@ header .header-mes img {
 }
 .hyVideoLi img {
 	width: 100%;
-	/* height: 100%; */
+	height: 100%;
 	position: absolute;
 }
 .hyVideoLi:nth-child(2n) {
@@ -1709,7 +1737,7 @@ header .header-mes img {
   float: left;
   margin: 0.2rem 0;
 }
-.hyUnderstandLiPrice s {
+.hyUnderstandLiPrice .hyUnderstandLiPriceS {
   float: none;
   margin-left: 0.25rem;
   font-size: 0.5rem;
@@ -1725,7 +1753,7 @@ header .header-mes img {
   width: 2.5rem;
   height: 0.8rem;
   font-size: 0.4rem;
-  line-height: 0.8rem;
+  line-height: 0.9rem;
   border-radius: 0.2rem;
   color: #fff;
   text-align: center;

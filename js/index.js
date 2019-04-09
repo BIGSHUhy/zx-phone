@@ -1,7 +1,7 @@
 // 监听滚动条
 $(window).scroll(function() {
-	console.log($(this).scrollTop())
-	if($(this).scrollTop() > 69) {
+	// console.log($(this).scrollTop())
+	if($(this).scrollTop() > 10) {
 		$(".header-box").css({"margin-bottom":"0"})
 		$(".banner-container").css({"z-index":"998"})
 	} else {
@@ -41,6 +41,8 @@ var mySwiper = new Swiper('.banner-container',{
 	
 	
 	loop : true,
+	observer:true, 
+	observeParents:true,
 	pagination: {
 		el: '.swiper-pagination',
 	  },
